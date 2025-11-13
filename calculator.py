@@ -13,7 +13,7 @@ import math
 def add(a, b):
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -22,7 +22,7 @@ def mul(a, b):
 def div(a, b):
     return b / a # raise ZeroDivisionError if a == 0
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or a == 1 or b <= 0:
         raise ValueError("Input must be a positive number.")
     return math.log(b,a)
