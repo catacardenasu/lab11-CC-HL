@@ -1,3 +1,6 @@
+#https://github.com/catacardenasu/lab11-CC-HL
+#Partner 1: Catalina Cardenas
+#Partner 2: Hanyu Luo
 import unittest
 from calculator import *
 
@@ -13,11 +16,11 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtract(self): # 3 assertions
         # basic subtraction
-        self.assertEqual(sub(10, 3), 7)
+        self.assertEqual(subtract(10, 3), 7)
         # negative result
-        self.assertEqual(sub(2, 5), -3)
+        self.assertEqual(subtract(2, 5), -3)
         # decimals
-        self.assertAlmostEqual(sub(5.5, 2.2), 3.3)
+        self.assertAlmostEqual(subtract(5.5, 2.2), 3.3)
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
@@ -38,14 +41,14 @@ class TestCalculator(unittest.TestCase):
 
     def test_logarithm(self): # 3 assertions
         # log base 10
-        self.assertAlmostEqual(log(10, 100), 2)
-        self.assertAlmostEqual(log(math.e, math.e), 1)
+        self.assertAlmostEqual(logarithm(10, 100), 2)
+        self.assertAlmostEqual(logarithm(math.e, math.e), 1)
         # log with decimal base
-        self.assertAlmostEqual(log(2, 8), 3)
+        self.assertAlmostEqual(logarithm(2, 8), 3)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(1, 10)
+            logarithm(1, 10)
 
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
