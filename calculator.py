@@ -1,3 +1,6 @@
+#https://github.com/catacardenasu/lab11-CC-HL
+#Partner 1: Catalina Cardenas
+#Partner 2: Hanyu Luo
 """
 calculator.py
 - Defines functions used to create a simple calculator
